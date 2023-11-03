@@ -4,7 +4,6 @@ from datetime import timedelta
 from airflow import DAG
 from airflow.models.baseoperator import chain
 from airflow.operators.bash import BashOperator
-from airflow.operators.python import PythonOperator
 from airflow.operators.dummy import DummyOperator
 from airflow.providers.amazon.aws.operators.glue import AwsGlueJobOperator
 from airflow.utils.dates import days_ago
